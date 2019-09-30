@@ -10,7 +10,7 @@ public class DataType {
 		double doubleNum = 1;
 		System.out.println(doubleNum);
 		
-		char ch1 = '안';
+		char ch1 = '안'; // 2byte
 		char ch2 = '녕';
 		char ch3 = '하';
 		char ch4 = '세';
@@ -18,7 +18,7 @@ public class DataType {
 		
 		String str = "안녕하세요";
 		
-		boolean bl = true;
+		boolean bl = true; // 1byte
 		bl = false;
 		
 		System.out.println(num + str);

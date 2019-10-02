@@ -23,5 +23,6 @@ public class ObjectTest {
 		System.out.println(ot.str == ot2.str);
 		// 빈문자열도 자바가 한번만 기억함
 		//new String으로 강제적으로 자리를 만들면 서로 다른 값을 가진다
+		
 	}
 }

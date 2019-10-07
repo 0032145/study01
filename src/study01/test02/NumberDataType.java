@@ -12,7 +12,7 @@ public class NumberDataType {
 		//정수 저장 할 수 있는 것 중 제일 큼 (8byte)
 		long l = 10000000;
 		
-		double d = 1; // 
+		double d = 1; 
 		//f1.1  1.1f로 수가 float이라고 알려줘야함
 		float f = 1.1f;
 	}

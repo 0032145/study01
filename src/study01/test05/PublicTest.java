@@ -10,7 +10,7 @@ import study01.test04.PrivateTest;
  */
 
 	class Test{
-		private int num; // 같은 파일에 있어도 다른 클래스에서 사용불가
+		private int num; // private : 같은 파일에 있어도 다른 클래스에서 사용불가
 	}
 	
 	public class PublicTest {

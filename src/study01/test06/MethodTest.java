@@ -3,17 +3,17 @@ package study01.test06;
 public class MethodTest {
 
 	public static void main(String[] args) {
-		String str = "123"; // 자바가 데이터 생성(static Java memory)
-		String str1 = new String("123"); // 다른곳에 데이터 생성(Heap memory)
-		System.out.println("123");
+		String str = "1"; // 자바가 데이터 생성(static Java memory)
+		String str1 = new String("1"); // 다른곳에 데이터 생성(Heap memory)
+		System.out.println("1");
 		System.out.println(str);
 		System.out.println(str1);
-		System.out.println(str=="123");
-		System.out.println(str1=="123"); // == : 데이터 주소가 같은지 확인
+		System.out.println(str=="1");
+		System.out.println(str1=="1"); // == : 데이터 주소가 같은지 확인
 		System.out.println(str==str1);
 		
 		System.out.println(str.contentEquals(str1));
-		// str(String)의 equals
+		// str과 str1의 주소가 아니라 값을 비교함
 		
 		int a = 2;
 		System.out.println(a==1); // 정해진 데이터 타입에는 new 불가

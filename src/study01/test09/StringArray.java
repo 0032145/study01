@@ -66,7 +66,7 @@ public class StringArray {
 		
 		
 		int a = 1;
-		Integer i = 1; // = new Integer(1);  wrapping class
+		Integer i = 1; // = new Integer(1);  wrapper class
 		
 		ArrayList<Integer>numList = new ArrayList<Integer>();
 		numList.add(1); // Integer라서 정수만 들어감

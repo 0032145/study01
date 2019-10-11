@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Vector;
 
 public class ListTest {
-// List Map Set 컬렉터블
+// List Map Set 컬렉션 프레임워크
 	public static void main(String[] args) {
 		// List가 ArrayList의 조상이거나 인터페이스라고 볼 수 있어야함
 		List<String> strList1 = new ArrayList<String>();

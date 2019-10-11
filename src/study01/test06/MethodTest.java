@@ -9,8 +9,8 @@ public class MethodTest {
 		System.out.println(str);
 		System.out.println(str1);
 		System.out.println(str=="1");
-		System.out.println(str1=="1"); // == : 데이터 주소가 같은지 확인
-		System.out.println(str==str1);
+		System.out.println(str1=="1");
+		System.out.println(str==str1); // == : 데이터 주소가 같은지 확인
 		
 		System.out.println(str.contentEquals(str1));
 		// str과 str1의 주소가 아니라 값을 비교함

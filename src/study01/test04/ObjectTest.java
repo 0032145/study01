@@ -16,7 +16,7 @@ public class ObjectTest {
 	public static void main(String[] args) {
 		ObjectTest objectTest = new ObjectTest();
 		/*
-		 *  위라인에서 6~8라인을 읽고 값을 초기화시켜줌
+		 *  위라인에서 8~10라인을 읽고 값을 초기화시켜줌(인스턴스화)
 		 *  정해져있지 않는 데이터타입 초기화 = 
 		 *  데이터타입 변수 = new 데이터타입(); 
 		*/

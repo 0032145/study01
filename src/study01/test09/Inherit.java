@@ -21,7 +21,7 @@ public class Inherit extends Atom {
 		
 		System.out.println(new Inherit());
 		
-		Object obj = 1; // Object는 아무거나 들어감(그렇다고 이렇게 쓰면 안됨)
+		Object obj = 1; // Object는 아무거나 들어감(이렇게 쓰면 안됨)
 		obj = "1";
 		obj = true;
 		obj = new Scanner(System.in);

@@ -19,6 +19,16 @@ public class ListTest {
 			this.strs[i] = tmpstrs[i];
 		}
 	}
+	public String toString() {
+		String str = "[";
+		for(int i = 0;i<strs.length;i++) {
+			str += strs[i] + ", ";
+		}
+		str = str.substring(0,str.length()-2);
+	//substring(int) : 데이터를 잘라서 보여주는 기능/삭제 아님 (int번 방부터 보여줌)
+	//substring(int1,int2) : int1방부터 in2방까지 보여줌
+		return str += "]";
+	}
 	
 	public static void main(String[] args) {
 		ListTest lt = new ListTest();
@@ -29,5 +39,6 @@ public class ListTest {
 		System.out.println(lt.strs[0]);
 		System.out.println(lt.strs[1]);
 		System.out.println(lt.strs[2]);
+		System.out.println(lt);
 	}
 }

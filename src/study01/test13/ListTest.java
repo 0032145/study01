@@ -27,6 +27,8 @@ public class ListTest {
 		str = str.substring(0,str.length()-2);
 	//substring(int) : 데이터를 잘라서 보여주는 기능/삭제 아님 (int번 방부터 보여줌)
 	//substring(int1,int2) : int1방부터 in2방까지 보여줌
+	//replace (old char, new char) old char를 new char로 바꿈
+	//substring과 replace 모두 원문에는 영향을 주지 않음
 		return str += "]";
 	}
 	

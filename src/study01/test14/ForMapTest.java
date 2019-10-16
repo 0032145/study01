@@ -20,11 +20,11 @@ public class ForMapTest {
 		List<HashMap<String,String>> mapList
 			= new ArrayList<HashMap<String,String>>();
 		for(int i = 0;i<fmt.sample();i++) {
+			map = new HashMap<String,String>();
 			map.put("이름",i+"");
 			map.put("나이", i+"");
 			map.put("성별", i+"");
-			mapList.add(map);
-			map = new HashMap<String,String>();
+			mapList.add(map);			
 		}
 		for(int i = 0;i<mapList.size();i++) {
 			System.out.println(mapList.get(i));

@@ -24,8 +24,8 @@ public class ConnectionTest {
 			
 			con = DriverManager.getConnection(url, id, pwd); // 접속
 			
-			Statement stmt = con.createStatement(); // 글씨판 생성
-			
+			Statement stmt = con.createStatement(); // 글씨판 생성, 일반적으로 안씀
+			// 스트럭쳐 쿼리 랭귀지 sql
 			String sql = "select * from user_info"; // query문 생성
 			ResultSet rs = stmt.executeQuery(sql); // query 실행
 			// rs는 메타데이터와 데이터를 가지고있다.

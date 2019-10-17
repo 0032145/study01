@@ -1,4 +1,4 @@
-package study02;
+package study02.test01;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class TestTest3 {
+public class TestTest5 {
 
 	public static void main(String[] args) {
 		
@@ -18,7 +18,7 @@ public class TestTest3 {
 			String pwd = "12345678";
 			
 			Connection con = DriverManager.getConnection(url, id, pwd);
-					
+			
 			Statement stmt = con.createStatement();
 			
 			String sql = "select * from user_info";
@@ -27,7 +27,9 @@ public class TestTest3 {
 			while(rs.next()) {
 				System.out.println(rs.getString("id"));
 				System.out.println(rs.getString("pwd"));
+				System.out.println(rs.getString("name"));
 			}
+			
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}

@@ -1,4 +1,4 @@
-package study02;
+package study02.test01;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class TestTest5 {
+public class TestTest4 {
 
 	public static void main(String[] args) {
 		
@@ -26,13 +26,12 @@ public class TestTest5 {
 			
 			while(rs.next()) {
 				System.out.println(rs.getString("id"));
-				System.out.println(rs.getString("pwd"));
 				System.out.println(rs.getString("name"));
 			}
-			
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
+		
 		
 	}
 }

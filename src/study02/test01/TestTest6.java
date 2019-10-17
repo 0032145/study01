@@ -1,4 +1,4 @@
-package study02;
+package study02.test01;
 
 public class TestTest6 {
 

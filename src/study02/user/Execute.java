@@ -94,29 +94,65 @@ public class Execute {
 		}
 	}
 	
-	public static void main(String[] args) {
-		Execute ex = new Execute();
-		String orderNum = ex.scan.nextLine();
-		while(!orderNum.equals("q")) {
-		System.out.println("원하시는 서비스 번호를 입력하세요");
-		System.out.println("1. 유저생성");
-		System.out.println("2. 유저삭제");
-		System.out.println("3. 유저변경");
-		System.out.println("4. 유저조회");
-		System.out.println("q. 종료");
-			if(orderNum.equals("1")) {
-				ex.insert();
-				break;
-			} else if(orderNum.equals("2")) {
-				ex.delete();
-				break;
-			} else if(orderNum.equals("3")) {
-				ex.update();
-			} else if(orderNum.equals("4")) {
-				ex.select();
-				break;
+	void initResponse() {
+		String res = "";
+		while (!res.equals("q")) {
+			System.out.println("원하시는 서비스 번호를 입력하세요");
+			System.out.println("1. 유저생성");
+			System.out.println("2. 유저삭제");
+			System.out.println("3. 유저변경");
+			System.out.println("4. 유저조회");
+			System.out.println("q. 종료");
+			res = scan.nextLine();
+			
+			if("1".equals(res)) {
+				
+			} else if("2".equals(res)) {
+				
+			} else if("3".equals(res)) {
+				
+			} else if("4".equals(res)) {
+				
+			} else if("q".equals(res)) {
+				System.out.println("종료되었습니다");
+			} else {
+				System.out.println("잘못된 값입니다. 다시 입력해주세요");
 			}
 		}
-		System.out.println("종료되었습니다");
+	}
+	
+	public static void main(String[] args) {
+		Execute ex = new Execute();
+		ex.initResponse();
+		/*
+		while(1==1) {
+			System.out.println("원하시는 서비스 번호를 입력하세요");
+			System.out.println("1. 유저생성");
+			System.out.println("2. 유저삭제");
+			System.out.println("3. 유저변경");
+			System.out.println("4. 유저조회");
+			System.out.println("q. 종료");
+			String orderNum = ex.scan.nextLine();
+			if(orderNum.equals("q")){
+				System.out.println("종료되었습니다");
+				break;
+			} else if(orderNum.equals("1")) {
+				ex.insert();
+				continue;
+			} else if(orderNum.equals("2")) {
+				ex.delete();
+				continue;
+			} else if(orderNum.equals("3")) {
+				ex.update();
+				continue;
+			} else if(orderNum.equals("4")) {
+				ex.select();
+				continue;
+			} else {
+				System.out.println("잘못된 값입니다. 다시 입력해주세요");
+				continue;
+			}
+		}
+		*/
 	}
 }
